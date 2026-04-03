@@ -27,7 +27,7 @@ all = ["anthropic", "openai", "openai-whisper"]
 youtube-blog = "youtube_blog_cli.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/your-username/youtube-blog-cli"
+Homepage = "https://github.com/shexiaobin/youtube-blog-cli"
 
 [tool.setuptools.packages.find]
 include = ["youtube_blog_cli*"]

@@ -25,7 +25,7 @@ YouTube URL → 字幕提取 → AI 生成博客 → TTS 语音合成
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/yourname/youtube-blog-cli.git
+git clone https://github.com/shexiaobin/youtube-blog-cli.git
 cd youtube-blog-cli
 
 # 2. 创建并激活虚拟环境
