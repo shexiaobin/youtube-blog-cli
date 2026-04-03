@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youtube-blog-cli"
+version = "0.1.0"
+description = "YouTube 视频转博客 CLI 工具，支持 AI 生成博客 + 语音合成"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = [
+    "python-dotenv",
+    "edge-tts",
+    "yt-dlp>=2025.01.26",
+    "youtube-transcript-api",
+    "requests",
+]
+
+[project.optional-dependencies]
+anthropic = ["anthropic"]
+openai = ["openai"]
+whisper = ["openai-whisper"]
+all = ["anthropic", "openai", "openai-whisper"]
+
+[project.scripts]
+youtube-blog = "youtube_blog_cli.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/your-username/youtube-blog-cli"
+
+[tool.setuptools.packages.find]
+include = ["youtube_blog_cli*"]
+
+[tool.setuptools.package-data]
+youtube_blog_cli = ["prompts/*.md"]

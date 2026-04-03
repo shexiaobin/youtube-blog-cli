@@ -1,0 +1,2 @@
+[console_scripts]
+youtube-blog = youtube_blog_cli.cli:main
